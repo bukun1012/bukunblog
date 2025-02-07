@@ -19,10 +19,10 @@ jobs:
           hugo-version: "latest"
 
       - name: 🚀 建立 Hugo 靜態網站
-        run: hugo --minify
+        run: hugo --minify --baseURL "https://bukun1012.github.io/bukunblog/"
 
       - name: 📤 部署到 GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.GH_PAT }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
