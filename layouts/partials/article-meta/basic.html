@@ -1,0 +1,78 @@
+{{/* 確定正確的內容範圍與作用範圍 */}}
+{{ $context := . }}
+{{ $scope := default nil }}
+
+{{ if reflect.IsMap . }}
+  {{ $context = .context }}
+  {{ $scope = cond (not .scope) nil .scope }}
+{{ end }}
+
+{{ with $context }}
+{{ $meta := newScratch }}
+
+{{/* 收集此內容範圍的部分內容 */}}
+{{ if .Params.showDate | default (.Site.Params.article.showDate | default true) }}
+  {{ $meta.Add "partials" (slice (partial "meta/date.html" .Date)) }}
+{{ else if and (eq $scope "single") (.Params.showDateOnlyInArticle | default (.Site.Params.article.showDateOnlyInArticle | default false)) }}
+  {{ $meta.Add "partials" (slice (partial "meta/date.html" .Date)) }}
+{{ end }}
+
+{{ if and (.Params.showDateUpdated | default (.Site.Params.article.showDateUpdated | default false)) (ne (partial "functions/date.html" .Date) (partial "functions/date.html" .Lastmod)) (gt (.Lastmod | time.Format "2006") 1) }}
+  {{ $meta.Add "partials" (slice (partial "meta/date-updated.html" .Lastmod)) }}
+{{ end }}
+
+{{ if and (.Params.showWordCount | default (.Site.Params.article.showWordCount | default false)) (ne .WordCount 0) }}
+  {{ $meta.Add "partials" (slice (partial "meta/word-count.html" .)) }}
+{{ end }}
+
+{{ if and (.Params.showReadingTime | default (.Site.Params.article.showReadingTime | default true)) (ne .ReadingTime 0) }}
+  {{ $meta.Add "partials" (slice (partial "meta/reading-time.html" .)) }}
+{{ end }}
+
+{{ if and (not .Params.externalURL) (.Params.showViews | default (.Site.Params.article.showViews | default false)) }}
+  {{ $meta.Add "partials" (slice (partial "meta/views.html" .)) }}
+{{ end }}
+
+{{ if and (not .Params.externalURL) (.Params.showLikes | default (.Site.Params.article.showLikes | default false)) }}
+  {{ $meta.Add "partials" (slice (partial "meta/likes.html" .)) }}
+{{ end }}
+
+<div class="flex flex-row flex-wrap items-center">
+  {{ with ($meta.Get "partials") }}
+    {{ delimit . "<span class=\"px-2 text-primary-500\">&middot;</span>" | safeHTML }}
+  {{ end }}
+</div>
+
+{{/* 顯示分類與標籤 */}}
+{{ if .Params.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false) }}
+<div class="flex flex-col flex-wrap items-start mt-2">
+  
+  {{/* 顯示分類（Categories） */}}
+  {{ with ($context.GetTerms "categories") }}
+    <div class="flex flex-wrap items-center">
+      <strong class="mr-2 text-primary-500">分類：</strong>
+      {{ range . }}
+        <span class="px-2 py-1 mb-1 mr-2 text-sm font-semibold bg-transparent border rounded-full cursor-pointer text-primary-500 border-primary-500 hover:bg-primary-500 hover:text-white"
+              onclick="window.open('{{ .RelPermalink }}','_self');">
+          {{ .LinkTitle }}
+        </span>
+      {{ end }}
+    </div>
+  {{ end }}
+
+  {{/* 顯示標籤（Tags） */}}
+  {{ with ($context.GetTerms "tags") }}
+    <div class="flex flex-wrap items-center mt-2">
+      <strong class="mr-2 text-primary-500">標籤：</strong>
+      {{ range . }}
+        <span class="px-2 py-1 mb-1 mr-2 text-sm font-semibold bg-transparent border rounded-full cursor-pointer text-primary-500 border-primary-500 hover:bg-primary-500 hover:text-white"
+              onclick="window.open('{{ .RelPermalink }}','_self');">
+          {{ .LinkTitle }}
+        </span>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ end }}
