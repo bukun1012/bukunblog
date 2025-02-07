@@ -6,7 +6,7 @@ description: "從零開始學習如何使用 Hugo 建立靜態網站。"
 slug: "getting-started-hugo"
 categories: ["Hugo"]
 tags: ["網站開發", "靜態網站", "部落格"]
-date: 2025-02-06T10:00:00+08:00
+date: 2025-02-07T20:00:00+08:00
 author: "Bukun"
 ---
 
@@ -20,17 +20,27 @@ Hugo 是一款高效的靜態網站生成器，非常適合建立個人部落格
 
 ### macOS
 
+#### 使用 Homebrew 安裝
+
 ```bash
 brew install hugo
 ```
 
+如果你需要 Hugo 的 **extended 版本**（用於處理 SCSS/SASS），請使用：
+
+```bash
+brew install hugo_extended
+```
+
 ### Windows
+
+#### 使用 Scoop 安裝
 
 ```powershell
 scoop install hugo
 ```
 
-或使用 Chocolatey 安裝：
+#### 或使用 Chocolatey 安裝
 
 ```powershell
 choco install hugo -confirm
@@ -38,15 +48,33 @@ choco install hugo -confirm
 
 ### Linux
 
+#### Ubuntu / Debian 系統
+
 ```bash
-sudo apt install hugo
+sudo apt update && sudo apt install hugo
 ```
+
+#### Fedora
+
+```bash
+dnf install hugo
+```
+
+#### Arch Linux
+
+```bash
+pacman -S hugo
+```
+
+### 驗證安裝
 
 安裝完成後，請使用以下指令確認是否成功安裝：
 
 ```bash
 hugo version
 ```
+
+若能看到 Hugo 的版本資訊，表示安裝成功。
 
 ## 建立 Hugo 專案
 
@@ -60,17 +88,17 @@ hugo new site my-blog
 
 ```
 my-blog/
-├── archetypes/
-├── content/
-├── layouts/
-├── static/
-├── themes/
-├── config.toml
+├── archetypes/      # 預設文章模板
+├── content/         # 文章內容
+├── layouts/         # 版型檔案
+├── static/          # 靜態資源 (圖片、CSS、JS)
+├── themes/          # 佈景主題
+├── config.toml      # 站點設定檔案
 ```
 
 ## 選擇佈景主題
 
-你可以從 [Hugo Themes](https://themes.gohugo.io/) 挑選適合的主題，例如 `ananke`：
+Hugo 允許使用不同的佈景主題來快速建立網站。你可以從 [Hugo Themes](https://themes.gohugo.io/) 挑選適合的主題，例如 `ananke`：
 
 ```bash
 cd my-blog
@@ -81,6 +109,17 @@ git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git theme
 並在 `config.toml` 中設定主題：
 
 ```toml
+theme = "ananke"
+```
+
+## 設定網站基本資訊
+
+在 `config.toml` 中，新增以下內容來設定網站基本資訊：
+
+```toml
+baseURL = "http://localhost:1313/"
+languageCode = "zh-TW"
+title = "我的 Hugo 網站"
 theme = "ananke"
 ```
 
@@ -113,20 +152,6 @@ hugo server -D
 ```
 
 然後打開瀏覽器，訪問 `http://localhost:1313/`，你將會看到你的網站。
-
-## 部署網站
-
-Hugo 生成的靜態網站可以輕鬆部署到 GitHub Pages、Netlify 或 Vercel。
-
-### 部署到 GitHub Pages
-
-1. 在 GitHub 上建立一個 Repository
-2. 設定 `config.toml` 中的 `baseURL`
-3. 生成靜態網站：
-   ```bash
-   hugo -D
-   ```
-4. 將 `public/` 目錄的內容推送到 GitHub Pages
 
 ## 總結
 
