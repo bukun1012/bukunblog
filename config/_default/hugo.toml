@@ -3,7 +3,7 @@
 # https://blowfish.page/docs/getting-started/
 
 theme = "blowfish"
-baseURL = "https://bukun1012.github.io/"
+baseURL = "https://bukun1012.github.io/bukunblog/"
 defaultContentLanguage = "zh-tw"
 
 
