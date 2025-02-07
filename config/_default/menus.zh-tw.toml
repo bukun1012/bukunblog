@@ -9,6 +9,10 @@
 # By default the menu is ordered alphabetically. This can be
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
+[[main]]
+  name = "主頁"
+  pageRef = "/"
+  weight = 1
 
 [[main]]
   name = "文章"
@@ -16,20 +20,14 @@
   weight = 10
 
 [[main]]
-  name = "示例"
+  name = "分類"
   weight = 20
+  pageRef = "categories"
 
-#[[main]]
-#  name = "功能示例"
-#  parent = "示例"
-#  pageRef = "samples"
-#  weight = 16
-
-#[[main]]
-#  name = "模板示例"
-#  parent = "示例"
-#  pageRef = "examples"
-#  weight = 30
+[[main]]
+  name = "關於我"
+  pageRef = "about"
+  weight = 30
 
 #[[main]]
 #  name = "部署指南"
@@ -65,12 +63,8 @@
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.
 
- [[footer]]
-   name = "标签"
-   pageRef = "tags"
-   weight = 10
+# [[footer]]
+#   name = "标签"
+#   pageRef = "tags"
+#   weight = 10
 
- [[footer]]
-   name = "作者"
-   pageRef = "authors"
-   weight = 20

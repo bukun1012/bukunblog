@@ -10,7 +10,7 @@ defaultContentLanguage = "zh-tw"
 # pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
-summaryLength = 30
+summaryLength = 0
 hasCJKLanguage = true
 
 buildDrafts = false
@@ -27,10 +27,10 @@ googleAnalytics = "G-PEDMYR1V0K"
   anchor = 'Center'
 
 [taxonomies]
-  tag = "tags"
   category = "categories"
-  author = "authors"
+  tag = "tags"
   series = "series"
+  author = "authors"
 
 [sitemap]
   changefreq = 'always'

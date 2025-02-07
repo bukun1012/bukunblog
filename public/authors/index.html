@@ -8,8 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>作者列表示例 &middot; Bukun的軟體學習部落格</title>
-  <meta name="title" content="作者列表示例 &middot; Bukun的軟體學習部落格" />
+  <title>Authors &middot; Bukun的軟體學習部落格</title>
+  <meta name="title" content="Authors &middot; Bukun的軟體學習部落格" />
   
   <meta name="description" content="軟體學習部落格" />
   
@@ -71,15 +71,15 @@
   
   <meta property="og:url" content="http://localhost:1313/authors/">
   <meta property="og:site_name" content="Bukun的軟體學習部落格">
-  <meta property="og:title" content="作者列表示例">
-  <meta property="og:description" content="在你的文章中添加不同作者的简单示例。">
+  <meta property="og:title" content="Authors">
+  <meta property="og:description" content="軟體學習部落格">
   <meta property="og:locale" content="zh_tw">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="作者列表示例">
-  <meta name="twitter:description" content="在你的文章中添加不同作者的简单示例。">
+  <meta name="twitter:title" content="Authors">
+  <meta name="twitter:description" content="軟體學習部落格">
 
   
   
@@ -159,7 +159,7 @@
   
   <div class="min-h-[148px]"></div>
 <div class="fixed inset-x-0 pl-[24px] pr-[24px]" style="z-index:100">
-  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl shadow-2xl"></div>
+  <div id="menu-blur" class="absolute opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom bg-neutral dark:bg-neutral-800"></div>
   <div class="relative max-w-[64rem] ml-auto mr-auto">
     <div style="padding-left:0;padding-right:0;padding-top:2px;padding-bottom:3px"
     class="main-menu flex items-center justify-between px-4 py-6 sm:px-6 md:justify-start gap-x-3">
@@ -191,9 +191,20 @@
             
             
             
+  <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="Bukun的軟體學習部落格">
+        主頁
+    </p>
+</a>
+
+
+
+            
+            
   <a href="/docs/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="文档">
+    <p class="text-base font-medium" title="文章">
         文章
     </p>
 </a>
@@ -202,10 +213,21 @@
 
             
             
-  <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+  <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
     
-    <p class="text-base font-medium" title="">
-        示例
+    <p class="text-base font-medium" title="分類">
+        分類
+    </p>
+</a>
+
+
+
+            
+            
+  <a href="/about-me/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    
+    <p class="text-base font-medium" title="關於我">
+        關於我
     </p>
 </a>
 
@@ -368,9 +390,24 @@
 
                     
   <li class="mt-1">
+    <a href="/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="Bukun的軟體學習部落格">
+            主頁
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
     <a href="/docs/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="文档">
+        <p class="text-bg font-bg" title="文章">
             文章
         </p>
     </a>
@@ -383,10 +420,25 @@
 
                     
   <li class="mt-1">
-    <a href=""  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+    <a href="/categories/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
         
-        <p class="text-bg font-bg" title="">
-            示例
+        <p class="text-bg font-bg" title="分類">
+            分類
+        </p>
+    </a>
+</li>
+
+
+
+
+                    
+
+                    
+  <li class="mt-1">
+    <a href="/about-me/"  class="flex items-center text-gray-500 hover:text-primary-600 dark:hover:text-primary-400">
+        
+        <p class="text-bg font-bg" title="關於我">
+            關於我
         </p>
     </a>
 </li>
@@ -477,7 +529,7 @@
 
     
     <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
-    style="background-image:url(/img/background.svg);">
+    style="background-image:url(/img/background_hu_1256986b7496b7f.png);">
     
 
 
@@ -488,20 +540,11 @@
     </div>
 </div>
 
-<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
-<script>
-    window.addEventListener('scroll', function (e) {
-        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-        var background_blur = document.getElementById('background-blur');
-        background_blur.style.opacity = (scroll / 300)
-    });
-</script>
-
  
 
   <header>
     
-    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">作者列表示例</h1>
+    <h1 class="mt-5 text-4xl font-extrabold text-neutral-900 dark:text-neutral">Authors</h1>
     <div class="mt-1 mb-2 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
 
@@ -534,24 +577,10 @@
     </div>
   </header>
   
-    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
-      <div class="min-w-0 min-h-0 max-w-prose">
-        <p>在你的文章中添加不同作者的简单示例。</p>
-
-      </div>
-    </section>
-  <script>
-    var oid = "views_taxonomy_authors"
-    var oid_likes = "likes_taxonomy_authors"
-  </script>
-  
-  
-  <script type="text/javascript" src="/js/page.min.0860cf4e04fa2d72cc33ddba263083464d48f67de06114529043cb4623319efed4f484fd7f1730df5abea0e2da6f3538855634081d02f2d6e920b956f063e823.js" integrity="sha512-CGDPTgT6LXLMM926JjCDRk1I9n3gYRRSkEPLRiMxnv7U9IT9fxcw31q&#43;oOLabzU4hVY0CB0C8tbpILlW8GPoIw=="></script>
-  
 
   
 
-  <section class="flex flex-wrap max-w-prose -mx-2 overflow-hidden">
+  <section class="w-full grid gap-4 sm:grid-cols-2 md:grid-cols-3">
     
   </section>
 
@@ -559,38 +588,10 @@
 
 
 
-      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
-  <a href="#the-top"
-    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
-    aria-label="捲動到頁頂" title="捲動到頁頂">
-    &uarr;
-  </a>
-</div>
+      
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   
-    
-    <nav class="flex flex-row pb-4 text-base font-medium text-neutral-500 dark:text-neutral-400">
-      <ul class="flex flex-col list-none sm:flex-row">
-        
-        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/tags/"
-            title="标签">
-            
-            标签
-          </a>
-        </li>
-        
-        <li class="flex mb-1 ltr:text-right rtl:text-left sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
-          <a class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2 flex items-center" href="/authors/"
-            title="作者列表示例">
-            
-            作者
-          </a>
-        </li>
-        
-      </ul>
-    </nav>
     
   
   <div class="flex items-center justify-between">
@@ -688,9 +689,5 @@
 
   </div>
 </body>
-
-<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-  data-id="nunocoracao" data-description="Support me on Buy me a coffee!" data-message=""
-  data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 </html>

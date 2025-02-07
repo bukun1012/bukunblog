@@ -1,0 +1,28 @@
+name: Deploy Hugo to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # 只要 main 分支有變更就觸發部署
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔄 檢出倉庫內容
+        uses: actions/checkout@v4
+
+      - name: 🛠️ 安裝 Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "latest"
+
+      - name: 🚀 建立 Hugo 靜態網站
+        run: hugo --minify
+
+      - name: 📤 部署到 GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public

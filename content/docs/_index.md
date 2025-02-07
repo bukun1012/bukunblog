@@ -1,13 +1,8 @@
 ---
-title: "文档"
-description: "如何使用 Blowfish。"
+title: "文章"
+description: "Bukun的軟體部落格"
 
 cascade:
-  showDate: false
-  showAuthor: false
-  invertPagination: true
+  showDate: true
+  showAuthor: true
 ---
-
-{{< lead >}}
-了解如何使用简单而强大的 Blowfish。
-{{< /lead >}}

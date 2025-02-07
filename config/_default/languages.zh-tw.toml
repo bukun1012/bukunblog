@@ -1,6 +1,6 @@
 languageCode = "zh-tw"
 languageName = "繁體中文"
-weight = 4
+weight = 1
 title = "Bukun的軟體學習部落格"
 
 [params]
@@ -10,6 +10,8 @@ title = "Bukun的軟體學習部落格"
   dateFormat = "2006-01-02"
   logo = "img/logo.png"
   description = "軟體學習部落格"
+
+
 
 [params.author]
   name = "Bukun"
