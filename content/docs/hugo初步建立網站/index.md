@@ -1,5 +1,5 @@
 ---
-title: "Hugo：如何初步建立網站"
+title: "[Hugo]如何初步建立網站"
 weight: 10
 draft: false
 description: "從零開始學習如何使用 Hugo 建立靜態網站。"
@@ -12,7 +12,6 @@ author: "Bukun"
 
 Hugo 是一款高效的靜態網站生成器，非常適合建立個人部落格或公司官網。
 本篇文章將從零開始，逐步建立一個 Hugo 網站。
-
 如果有任何問題，可以在 [Hugo 官方論壇](https://discourse.gohugo.io/) 上尋求幫助。
 
 ## 安裝 Hugo
@@ -27,7 +26,7 @@ Hugo 是一款高效的靜態網站生成器，非常適合建立個人部落格
 brew install hugo
 ```
 
-如果需要 Hugo 的 **extended 版本**（用於處理 SCSS/SASS），請使用：
+如果需要 Hugo 的 **extended 版本**（用於處理 SCSS/SASS），使用：
 
 ```bash
 brew install hugo_extended
@@ -83,18 +82,18 @@ my-blog/
 
 ## 選擇佈景主題
 
-Hugo 允許使用不同的佈景主題來快速建立網站。可以從 [Hugo Themes](https://themes.gohugo.io/) 挑選適合的主題，例如 `ananke`：
+Hugo 可以使用不同的佈景主題來快速建立網站。從 [Hugo Themes](https://themes.gohugo.io/) 挑選適合的主題，例如 `blowfish`，然後執行下載指令：
 
 ```bash
 cd my-blog
 git init
-git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+git submodule add -b main https://github.com/nunocoracao/blowfish.git themes/blowfish
 ```
 
 並在 `config.toml` 中設定主題：
 
 ```toml
-theme = "ananke"
+theme = "blowfish"
 ```
 
 ## 設定網站基本資訊
@@ -136,9 +135,9 @@ draft: true
 hugo server -D
 ```
 
-然後打開瀏覽器，訪問 `http://localhost:1313/`，你將會看到目前的網站！
+然後打開瀏覽器，訪問 `http://localhost:1313/`，你將會看到目前快速建立的網站！
 
 ## 總結
 
 現在已經成功建立了一個 Hugo 網站，可以開始撰寫部落格文章。
-下面文章將更深入設定自訂主題、優化 SEO 等，讓網站更具特色！
+下面文章將更深入設定[自訂主題]({{< relref "docs/hugo自訂主題" >}})、優化 SEO 等，讓網站更具特色！
