@@ -25,15 +25,16 @@
   pageRef = "categories"
 
 [[main]]
-  name = "關於我"
-  pageRef = "about"
+  name = "標籤"
+  pageRef = "tags"
   weight = 30
 
-#[[main]]
-#  name = "部署指南"
-#  parent = "示例"
-#  pageRef = "guides"
-#  weight = 40
+[[main]]
+  name = "關於我"
+  pageRef = "about"
+  weight = 40
+
+
 
 
 #[[main]]

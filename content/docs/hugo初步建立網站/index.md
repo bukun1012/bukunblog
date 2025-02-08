@@ -1,32 +1,33 @@
 ---
-title: "新手指南：如何使用 Hugo 建立網站"
+title: "Hugo：如何初步建立網站"
 weight: 10
 draft: false
 description: "從零開始學習如何使用 Hugo 建立靜態網站。"
 slug: "getting-started-hugo"
 categories: ["Hugo"]
 tags: ["網站開發", "靜態網站", "部落格"]
-date: 2025-02-07T20:00:00+08:00
+date: 2025-02-06T20:00:00+08:00
 author: "Bukun"
 ---
 
-Hugo 是一款高效的靜態網站生成器，非常適合建立個人部落格或公司官網。本篇文章將帶領新手從零開始，逐步建立一個 Hugo 網站。
+Hugo 是一款高效的靜態網站生成器，非常適合建立個人部落格或公司官網。
+本篇文章將從零開始，逐步建立一個 Hugo 網站。
 
-如果你有任何問題，可以在 [Hugo 官方論壇](https://discourse.gohugo.io/) 上尋求幫助。
+如果有任何問題，可以在 [Hugo 官方論壇](https://discourse.gohugo.io/) 上尋求幫助。
 
 ## 安裝 Hugo
 
-首先，你需要在電腦上安裝 Hugo，請根據你的作業系統選擇適合的方法。
+首先，需要在電腦上安裝 Hugo，根據作業系統選擇適合的方法。
 
 ### macOS
 
-#### 使用 Homebrew 安裝
+#### 使用 <span style="color: #ff6600">Homebrew</span> 安裝
 
 ```bash
 brew install hugo
 ```
 
-如果你需要 Hugo 的 **extended 版本**（用於處理 SCSS/SASS），請使用：
+如果需要 Hugo 的 **extended 版本**（用於處理 SCSS/SASS），請使用：
 
 ```bash
 brew install hugo_extended
@@ -34,41 +35,21 @@ brew install hugo_extended
 
 ### Windows
 
-#### 使用 Scoop 安裝
+#### 使用 <span style="color: #ff6600">Scoop</span> 安裝
 
 ```powershell
 scoop install hugo
 ```
 
-#### 或使用 Chocolatey 安裝
+#### 或使用 <span style="color: #ff6600">Chocolatey</span> 安裝
 
 ```powershell
 choco install hugo -confirm
 ```
 
-### Linux
-
-#### Ubuntu / Debian 系統
-
-```bash
-sudo apt update && sudo apt install hugo
-```
-
-#### Fedora
-
-```bash
-dnf install hugo
-```
-
-#### Arch Linux
-
-```bash
-pacman -S hugo
-```
-
 ### 驗證安裝
 
-安裝完成後，請使用以下指令確認是否成功安裝：
+安裝完成後，使用以下指令確認是否成功安裝：
 
 ```bash
 hugo version
@@ -76,9 +57,13 @@ hugo version
 
 若能看到 Hugo 的版本資訊，表示安裝成功。
 
+```bash
+hugo v0.142.0
+```
+
 ## 建立 Hugo 專案
 
-要建立新的 Hugo 網站，請執行：
+要建立新的 Hugo 網站，執行：
 
 ```bash
 hugo new site my-blog
@@ -98,7 +83,7 @@ my-blog/
 
 ## 選擇佈景主題
 
-Hugo 允許使用不同的佈景主題來快速建立網站。你可以從 [Hugo Themes](https://themes.gohugo.io/) 挑選適合的主題，例如 `ananke`：
+Hugo 允許使用不同的佈景主題來快速建立網站。可以從 [Hugo Themes](https://themes.gohugo.io/) 挑選適合的主題，例如 `ananke`：
 
 ```bash
 cd my-blog
@@ -145,14 +130,15 @@ draft: true
 
 ## 啟動本地開發伺服器
 
-當你有了佈景主題和文章後，可以使用以下指令啟動本地伺服器來預覽網站：
+當有了佈景主題和文章後，可以使用以下指令啟動本地伺服器來預覽網站：
 
 ```bash
 hugo server -D
 ```
 
-然後打開瀏覽器，訪問 `http://localhost:1313/`，你將會看到你的網站。
+然後打開瀏覽器，訪問 `http://localhost:1313/`，你將會看到目前的網站！
 
 ## 總結
 
-現在你已經成功建立了一個 Hugo 網站，並可以開始撰寫部落格文章。你可以進一步學習如何自訂主題、優化 SEO，讓你的網站更具特色！
+現在已經成功建立了一個 Hugo 網站，可以開始撰寫部落格文章。
+下面文章將更深入設定自訂主題、優化 SEO 等，讓網站更具特色！

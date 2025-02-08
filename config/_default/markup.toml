@@ -4,6 +4,7 @@
 [goldmark]
 [goldmark.renderer]
   unsafe = true
+  hardWraps = true
 
 [highlight]
   noClasses = false
@@ -11,3 +12,4 @@
 [tableOfContents]
   startLevel = 2
   endLevel = 4
+
