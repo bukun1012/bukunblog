@@ -4,7 +4,7 @@ draft: false
 description: "從零開始學習如何使用 Hugo 建立靜態網站。"
 slug: "getting-started-hugo"
 categories: ["Hugo"]
-tags: ["網站開發", "靜態網站", "部落格"]
+tags: ["網站開發", "靜態網站", "部落格", "Blowfish"]
 date: 2025-02-06
 author: "Bukun"
 ---

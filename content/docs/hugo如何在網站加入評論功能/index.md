@@ -4,7 +4,7 @@ draft: false
 description: "介紹如何在 Hugo 網站中加入評論系統，以提升與讀者的互動。"
 slug: "hugo-comments"
 categories: ["Hugo"]
-tags: ["靜態網站", "評論系統", "Disqus"]
+tags: ["靜態網站", "評論系統", "Disqus", "網站開發"]
 date: 2025-02-09
 author: "Bukun"
 ---

@@ -4,7 +4,7 @@ draft: false
 description: "介紹如何讓 Google 索引你的 GitHub Pages，提升搜尋能見度。"
 slug: "github-pages-GSC"
 categories: ["SEO"]
-tags: ["網站開發", "靜態網站", "GitHub Pages", "SEO"]
+tags: ["GitHub Pages", "SEO"]
 date: 2025-02-08T16:00:00+08:00
 author: "Bukun"
 ---
