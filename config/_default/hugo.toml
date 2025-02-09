@@ -38,7 +38,7 @@ googleAnalytics = "G-8V08R5C47X"
   priority = 0.5
 
 [outputs]
-  home = ["HTML", "RSS", "JSON", "SITEMAP"]
+  home = ["HTML", "RSS", "JSON"]
 
 [related]
   threshold = 0
