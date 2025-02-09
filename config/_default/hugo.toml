@@ -69,3 +69,7 @@ googleAnalytics = "G-8V08R5C47X"
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
+
+[services]
+  [services.disqus]
+    shortname = 'bukunblog'

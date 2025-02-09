@@ -7,6 +7,7 @@ categories: ["Hugo"]
 tags: ["網站開發", "靜態網站", "Blowfish"]
 date: 2025-02-07T20:00:00+08:00
 author: "Bukun"
+showComments: true
 ---
 
 本篇文章將繼續介紹如何調整 Hugo 主題，讓網站符合需求。

@@ -76,6 +76,7 @@ smartTOCHideUnfocusedChildren = false
   showAuthorsBadges = true 
   showWordCount = false
   showZenMode = true
+  showComments = true
   
 [list]
   showHero = true
