@@ -6,7 +6,7 @@ description: "從零開始學習如何使用 Hugo 建立靜態網站。"
 slug: "getting-started-hugo"
 categories: ["Hugo"]
 tags: ["網站開發", "靜態網站", "部落格"]
-date: 2025-02-06T20:00:00+08:00
+date: 2025-02-06
 author: "Bukun"
 ---
 
