@@ -1,5 +1,5 @@
 ---
-title: "如何讓 Google 搜尋到你的 GitHub Pages"
+title: "[SEO]如何讓 Google 搜尋到你的 GitHub Pages"
 draft: false
 description: "介紹如何讓 Google 索引你的 GitHub Pages，提升搜尋能見度。"
 slug: "github-pages-GSC"
