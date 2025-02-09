@@ -1,6 +1,5 @@
 ---
 title: "[Hugo]如何初步建立網站"
-weight: 10
 draft: false
 description: "從零開始學習如何使用 Hugo 建立靜態網站。"
 slug: "getting-started-hugo"
@@ -140,4 +139,4 @@ hugo server -D
 ## 總結
 
 現在已經成功建立了一個 Hugo 網站，可以開始撰寫部落格文章。
-下面文章將更深入設定[自訂主題]({{< relref "docs/hugo自訂主題" >}})、優化 SEO 等，讓網站更具特色！
+下面文章將更深入設定[自訂主題]({{< relref "docs/hugo自訂主題,從config出發！" >}})、優化 SEO 等，讓網站更具特色！

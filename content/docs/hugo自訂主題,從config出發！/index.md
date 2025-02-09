@@ -1,6 +1,5 @@
 ---
 title: "[Hugo]自訂主題,從config出發！"
-weight: 10
 draft: false
 description: "介紹如何設定Hugo的主題，以Blowfish為例"
 slug: "hugo-simple-theme"
