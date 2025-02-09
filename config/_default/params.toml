@@ -51,7 +51,7 @@ smartTOCHideUnfocusedChildren = false
 
 [article]
   showDate = true
-  showViews = false
+  showViews = true
   showLikes = false
   showDateOnlyInArticle = true
   showDateUpdated = false
@@ -76,7 +76,7 @@ smartTOCHideUnfocusedChildren = false
   showAuthorsBadges = true 
   showWordCount = false
   showZenMode = true
-
+  
 [list]
   showHero = true
   heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
