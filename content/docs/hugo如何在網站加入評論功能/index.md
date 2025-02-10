@@ -28,6 +28,8 @@ Hugo 本身是一個靜態網站生成器，不具備內建的評論系統，但
 ```toml
 [params]
   disqusShortname = "my-hugo-site"
+[article]
+  showComments = true
 ```
 
 ### **步驟 3: 驗證評論是否顯示**
@@ -131,6 +133,6 @@ hugo server -D
 - **Utterances**：適合技術部落格，留言儲存在 GitHub Issue，完全免費。
 - **Giscus**：基於 GitHub Discussions，適合開發者社群使用。
 
-我個人是使用 Disqus，基於他簡單快速好用。
+我個人是使用 Disqus，因為他設定簡單且快速好用。
 這些方法都能讓 Hugo 網站擁有留言功能
 選擇適合你的解決方案，讓網站與讀者有更多互動吧！
