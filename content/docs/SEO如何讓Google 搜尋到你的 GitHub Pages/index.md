@@ -1,10 +1,10 @@
 ---
-title: "[SEO]如何讓 Google 搜尋到你的 GitHub Pages"
+title: "[SEO]如何使用GoogleSearchConsole搜尋到你的 GitHub Pages"
 draft: false
-description: "介紹如何讓 Google 索引你的 GitHub Pages，提升搜尋能見度。"
+description: "介紹如何使用GoogleSearchConsole，讓 Google 索引你的 GitHub Pages，提升搜尋能見度。"
 slug: "github-pages-GSC"
 categories: ["SEO"]
-tags: ["GitHub Pages", "SEO"]
+tags: ["GitHub Pages", "SEO", "GoogleSearchConsole"]
 date: 2025-02-08T16:00:00+08:00
 author: "Bukun"
 ---
