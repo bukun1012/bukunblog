@@ -10,6 +10,7 @@ author: "Bukun"
 ---
 
 很多人在使用 **GitHub Pages** 建立 Hugo 網站後，發現自己的網站在 Google 上搜尋不到。
+包含我一開始也在思考這個問題該怎麼解決！
 這篇文章會介紹 **如何讓 Google 索引你的 GitHub Pages**，提升網站能見度，讓更多人能夠找到你的內容。
 
 ## 1. 確保 GitHub Pages 設定正確
@@ -20,7 +21,7 @@ author: "Bukun"
 2. 確保 **Source** 設定為 `Deploy from a branch` 或 `GitHub Actions`
 3. 網站 URL (如 `https://yourusername.github.io/`) 需要能夠正常開啟
 
-如果你的 GitHub Pages 部署正常，但 Google 仍然無法找到你的網站，請繼續以下步驟。
+確認 GitHub Pages 部署正常後，繼續以下步驟。
 
 ---
 
@@ -30,8 +31,18 @@ author: "Bukun"
 
 ### **檢查 `robots.txt`**
 
-Hugo 預設會產生 `robots.txt`，但如果不確定，可以手動設定。
+Hugo 預設會產生 `robots.txt`
+通常檔案最終生成位置會在`public/robots.txt`
+以 blowfish 主題為例，在`config/_default/hugo.toml`中
+有以下設定
 
+```txt
+enableRobotsTXT = false  #預設為true
+```
+
+我會建議把上述設定改成 false
+因為主題預設的設定檔會讓 google 爬蟲沒辦法順利運行
+我們可以手動設定。
 新增 `static/robots.txt`，內容如下：
 
 ```txt
@@ -143,14 +154,14 @@ Google 會優先處理這些請求，通常幾天內就會出現在搜尋結果�
 
 ### **設定文章的 SEO 標籤**
 
+在 `config.toml` 內啟用 `unsafe = true`，確保 Hugo 正確渲染 HTML meta 標籤。
+
 ```toml
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
 ```
-
-在 `config.toml` 內啟用 `unsafe = true`，確保 Hugo 正確渲染 HTML meta 標籤。
 
 ---
 
@@ -166,4 +177,4 @@ Google 會優先處理這些請求，通常幾天內就會出現在搜尋結果�
 6. 使用 **URL 檢查工具** 加速索引
 7. 優化 SEO 內容，確保標題、描述與內部連結完整
 
-完成這些步驟後，幾天內就能在 Google 上找到你的網站！ 🚀
+完成這些步驟後，幾天內就能在 Google 上找到你的網站啦！ 🚀
