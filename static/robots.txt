@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://bukun1012.github.io/bukunblog/sitemap.xml
