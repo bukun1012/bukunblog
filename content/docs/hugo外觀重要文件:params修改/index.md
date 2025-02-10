@@ -1,5 +1,5 @@
 ---
-title: "Hugo 外觀重要文件: params 修改"
+title: "[Hugo]外觀重要文件,params修改!"
 draft: false
 description: "詳細介紹如何修改 Hugo 的 params.toml，讓網站更具個人化與特色，以 Blowfish 為範例。"
 slug: "hugo-params-configuration"
