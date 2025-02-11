@@ -4,7 +4,7 @@ draft: false
 description: "詳細介紹如何使用 Django 建立專案，適合初學者快速上手。"
 slug: "django-project-setup"
 categories: ["Django"]
-tags: ["Python", "Web 應用", "Poetry"]
+tags: ["Python", "Web 應用", "Poetry", "MVC"]
 date: 2025-02-11
 author: "Bukun"
 ---
