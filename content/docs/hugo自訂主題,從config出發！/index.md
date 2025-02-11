@@ -127,5 +127,5 @@ body {
 ## 總結
 
 以上介紹了如何調整 Hugo Blowfish 主題，包括 `config.toml`、`languages.toml`、`menus.toml`、以及自訂 CSS 樣式。
-下一篇文章會進一步介紹**`params.toml`** ，讓網站更加個人化！
-如果想要進一步優化，可以客製化 `layouts/` 內的檔案，打造完全符合需求的 Hugo 網站！
+下一篇文章會進一步介紹[**`params.toml`**]({{< relref "docs/hugo外觀重要文件:params修改" >}}) ，讓網站更加個人化！
+如果有任何問題也歡迎下面留言討論！
