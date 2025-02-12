@@ -15,7 +15,6 @@ article:
     one: "{{ .Count }} 字"
     other: "{{ .Count }} 字"
   part_of_series: "系列文章請點此查看。"
-  #part: "§"
   this_article: "本文"
   related_articles: "相關文章"
 
