@@ -11,8 +11,8 @@ author: "Bukun"
 
 本篇文章將介紹如何透過 Firebase Analytics，在文章顯示瀏覽次數。
 
-做完網站後覺得很想讓文章中顯示瀏覽量
-研究了目前使用的主題的相關設置
+初步建置網站後覺得很想讓文章中顯示瀏覽量
+於是我研究了目前使用的主題的相關設置
 發現 Hugo Blowfish 主題提供了多種自訂功能，其中也支援 **Firebase** 來追蹤網站的瀏覽量。
 如果想知道更多設定請參閱[Blowfish-Firebase 設置](https://blowfish.page/docs/firebase-views/)
 接下來我們一步一步進行設定

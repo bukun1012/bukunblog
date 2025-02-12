@@ -7,6 +7,7 @@ categories: ["Django"]
 tags: ["Python", "Web 應用", "CRUD"]
 date: 2025-02-12T01:00:00+08:00
 author: "Bukun"
+series: ["CRUD"]
 ---
 
 在 Web 開發中，**CRUD（Create、Read、Update、Delete）** 是最基本的操作，其中 **C（Create）** 代表「建立資料」。
