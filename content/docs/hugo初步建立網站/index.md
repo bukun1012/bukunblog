@@ -7,6 +7,8 @@ categories: ["Hugo"]
 tags: ["網站開發", "靜態網站", "部落格", "Blowfish"]
 date: 2025-02-06
 author: "Bukun"
+series: ["Hugo"]
+series_order: 1
 ---
 
 Hugo 是一款高效的靜態網站生成器，非常適合建立個人部落格或公司官網。

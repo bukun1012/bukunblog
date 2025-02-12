@@ -1,12 +1,14 @@
 ---
-title: "[Hugo]如何在網站加入評論功能"
+title: "[Hugo]如何在網站加入留言功能"
 draft: false
-description: "介紹如何在 Hugo 網站中加入評論系統，以提升與讀者的互動。"
+description: "介紹如何在 Hugo 網站中加入留言系統，以提升與讀者的互動。"
 slug: "hugo-comments"
 categories: ["Hugo"]
-tags: ["靜態網站", "評論系統", "Disqus", "網站開發"]
+tags: ["靜態網站", "留言系統", "Disqus", "網站開發"]
 date: 2025-02-09
 author: "Bukun"
+series: ["Hugo"]
+series_order: 4
 ---
 
 Hugo 本身是一個靜態網站生成器，不具備內建的評論系統，但可以透過第三方服務來加入評論功能。

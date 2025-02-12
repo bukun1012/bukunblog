@@ -7,6 +7,8 @@ categories: ["Hugo"]
 tags: ["網站開發", "靜態網站", "Blowfish"]
 date: 2025-02-08
 author: "Bukun"
+series: ["Hugo"]
+series_order: 3
 ---
 
 上一篇文章我們介紹了 `hugo.toml`、`languages.toml` 以及 `menus.toml` 的設定。

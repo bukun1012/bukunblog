@@ -7,6 +7,8 @@ categories: ["Hugo"]
 tags: ["Blowfish", "Firebase", "網站分析", "網站開發"]
 date: 2025-02-10T14:00:00+08:00
 author: "Bukun"
+series: ["Hugo"]
+series_order: 5
 ---
 
 本篇文章將介紹如何透過 Firebase Analytics，在文章顯示瀏覽次數。
