@@ -87,6 +87,11 @@ service cloud.firestore {
 }
 ```
 
+### **步驟 2: 建立 Authentication**
+
+1. 在 Firebase 控制台，點選建置，進入 **Authentication**
+2. 點選建立，並且將使用者改為匿名
+
 ## 4. 總結
 
 現在網站就已成功整合 Firebase，並能夠顯示每篇文章的瀏覽次數。
