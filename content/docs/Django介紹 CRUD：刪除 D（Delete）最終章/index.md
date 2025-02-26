@@ -144,6 +144,6 @@ urlpatterns = [
 ✔ **設定 URL，讓功能可供訪問**
 ✔ **在文章列表頁面加上「刪除」按鈕**
 
-至此，我們已經完成了 **Django CRUD（Create、Read、Update、Delete）** 的完整功能！ 🚀
+至此，我們已經完成了 **Django CRUD（Create、Read、Update、Delete）** 的完整功能！
 
 如果有任何問題歡迎下面留言討論！

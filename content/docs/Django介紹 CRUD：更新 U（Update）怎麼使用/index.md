@@ -170,6 +170,6 @@ urlpatterns = [
 ✔ **設定 URL，讓功能可供訪問**
 ✔ **在文章列表頁面加上「編輯」按鈕**
 
-下一篇文章會介紹 **Django CRUD - Delete（刪除資料）**，讓我們學習如何刪除文章！ 🚀
+下一篇文章會介紹 [**Django CRUD - Delete（刪除資料）**]({{< relref "docs/Django介紹 CRUD：刪除 D（Delete）最終章" >}})，讓我們學習如何刪除文章！
 
 如果有任何問題歡迎下面留言討論！
