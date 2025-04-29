@@ -18,7 +18,7 @@ series_order: 2
 範例
 
 ```python
-Input: x = 121
+Input: x = 12
 Output: true
 Explanation: 121 正著讀和倒著讀都一樣
 
