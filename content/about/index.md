@@ -33,7 +33,7 @@ heroStyle: "thumbAndBackground"
 
 {{< github repo="bukun1012/PicTrace" >}}
 
-你可以在 [GitHub](https://github.com/bukun1012/PicTrace) 查看專案的完整代碼，歡迎交流與提供建議！
+你可以在 [PicTrace GitHub Repo](https://github.com/bukun1012/PicTrace) 查看專案的完整代碼，歡迎交流與提供建議！
 
 ## 為什麼選擇程式開發？
 
