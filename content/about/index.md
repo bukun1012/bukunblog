@@ -31,9 +31,7 @@ heroStyle: "thumbAndBackground"
 
 我目前正在開發一款名為 **PicTrace** 的專案，這是一個影像管理與追蹤系統，透過 Django 和前端技術實現。
 
-{{< github repo="bukun1012/PicTrace" >}}
-
-你可以在 [PicTrace GitHub Repo](https://github.com/bukun1012/PicTrace) 查看專案的完整代碼，歡迎交流與提供建議！
+你可以在 [PicTrace](https://github.com/bukun1012/PicTrace) 查看專案的完整代碼，歡迎交流與提供建議！
 
 ## 為什麼選擇程式開發？
 
